@@ -194,8 +194,9 @@ nav span {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    padding: 2rem;
+    padding-inline: 2rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     gap: 12px;
 }
 
@@ -244,6 +245,15 @@ nav span {
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 50%;
+}
+
+.card {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    padding: 5px 12px !important;
 }
 
 .black {
