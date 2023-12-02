@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="videoDetails.css">
+</head>
+
+<body>
+    <nav>
+        <img class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/YouTube_dark_logo_2017.svg/1280px-YouTube_dark_logo_2017.svg.png"
+            alt="">
+        <div class="inputDiv">
+            <input id="searchInput" type="text" placeholder="Search">
+            <button class="searchBtn" id="searchButton"><span class="material-icons">
+                    search
+                </span></button>
+        </div>
+        <span class="material-icons">
+            notifications
+        </span>
+    </nav>
+    <section class="main" id="main">
+        <div class="left" id="left">
+            <div class="videoPlayerDiv">
+                <div id="videoPlayer">
+                </div>
+            </div>
+            <h3 id="videoTitle"></h3>
+            <div class="videoDetails">
+                <div class="videoDetails-left">
+                    <img id="channelLogo" alt="">
+                    <div class="channelInfo">
+                        <h4 id="channelName">Channel name</h4>
+                        <p id="subCount"></p>
+                    </div>
+                    <button>Subscribe</button>
+                </div>
+                <div class="videoDetails-right">
+                    <div class="likeDiv">
+                        <span class="material-icons">
+                            thumb_up
+                        </span><span id="likeCount">60K</span>
+                        <span class="material-icons">
+                            thumb_down
+                        </span>
+                    </div>
+                    <div class="shareDiv">
+                        <span class="material-icons">
+                            share
+                        </span>
+                        <span>Share</span>
+                    </div>
+                    <div class="downloadDiv">
+                        <span class="material-icons">
+                            download
+                        </span>
+                        <span>Download</span>
+                    </div>
+                    <div class="donateDiv">
+                        <span class="material-icons">
+                            favorite
+                        </span>
+                        <span>Thanks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="description" id="description">
+            </div>
+            <h4>Comments</h4>
+            <div id="comments-container">
+                <div class="comment">
+
+                </div>
+            </div>
+        </div>
+        <div class="right" id="recommendedList">
+
+        </div>
+    </section>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="videoDetails.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>YouTube</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-row1">
+            <span id="menuIcon" class="material-icons">
+                menu
+            </span>
+            <img class="logo" src="assets/Logo.svg" alt="no-image">
+            <div class="inputDiv">
+                <input id="searchInput" type="text" placeholder="Search">
+                <button class="searchBtn" id="searchButton">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+            <div class="icons">
+                <img src="assets/stream.svg" alt="">
+                <img src="assets/boxex.svg" alt="">
+                <img src="assets/Profile.png" alt="">
+            </div>
+        </div>
+        <div class="line" id="line"></div>
+        <div class="nav-row2">
+            <div class="nav-filter-card active">All</div>
+            <div class="nav-filter-card">Gaming</div>
+            <div class="nav-filter-card">Live</div>
+            <div class="nav-filter-card">Motivation</div>
+            <div class="nav-filter-card">India</div>
+            <div class="nav-filter-card">Jethalal</div>
+            <div class="nav-filter-card">JavaScript</div>
+            <div class="nav-filter-card">Movie</div>
+            <div class="nav-filter-card">Wickets</div>
+            <div class="nav-filter-card">Java</div>
+            <div class="nav-filter-card">Gadets</div>
+            <div class="nav-filter-card">Soap</div>
+            <div class="nav-filter-card">Sigma Male</div>
+            <div class="nav-filter-card">Watched</div>
+            <div class="nav-filter-card">New to you</div>
+        </div>
+    </nav>
+    <div class="black" id="black"></div>
+    <section class="nav-card main">
+        <div class="leftMenu" id="leftMenu">
+            <div class="home">
+                <img src="assets/home.svg" alt="no-img">
+                <h4>Home</h4>
+            </div>
+            <div class="nav-card">
+                <img src="assets/explore.svg" alt="no-img">
+                <h4>Explore</h4>
+            </div>
+            <div class="nav-card">
+                <img src="assets/subscrip.svg" alt="no-img">
+                <h4>Subscriptions</h4>
+            </div>
+
+            <div class="line"></div>
+            <div>
+                <img src="assets/library.svg" alt="no-img">
+                <h4>Library</h4>
+            </div>
+            <div>
+                <img src="assets/history.svg" alt="no-image">
+                <h4>History</h4>
+            </div>
+            <div>
+                <img src="assets/yourvdo.svg" alt="no-image">
+                <h4>Your vidoes</h4>
+            </div>
+            <div>
+                <img src="assets/watchhistory.svg" alt="no-image">
+                <h4>Watch later</h4>
+            </div>
+            <div>
+                <img src="assets/like.svg" alt="no-image">
+                <h4>Liked Vidios</h4>
+            </div>
+            <div>
+                <img src="assets/showmore.svg" alt="no-image">
+                <h4>Show More</h4>
+            </div>
+        </div>
+
+        <div id="videoContainerDiv">
+        </div>
+    </section>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
