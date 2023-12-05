@@ -34,7 +34,6 @@ async function fetchAndShowVideDetails() {
     `${BASE_URL}/channels?key=${API_KEY}&part=snippet,statistics&id=${videoDetails.snippet.channelId}`
   );
   const channelData = await channelResponse.json();
-  // console.log(channelData)
 
   videoTitle.innerText = videoDetails.snippet.title;
   channelName.innerText = videoDetails.snippet.channelTitle;
@@ -126,7 +125,6 @@ async function fetchVideoDetails(videoId) {
   );
   const channelData = await channelResponse.json();
   const channelInfo = channelData.items[0].snippet;
-  // console.log("info",channelInfo)
 
   const videoDiv = document.createElement("div");
   videoDiv.id = videoId;
@@ -180,18 +178,10 @@ function formatViewCount(viewCount) {
   }
 }
 function calculateTimeGap(publishedAt) {
-  // Parse the "publishedAt" timestamp into a Date object
   const publishedDate = new Date(publishedAt);
-
-  // Get the current time as a Date object
   const currentDate = new Date();
-
-  // Calculate the time difference in milliseconds
   const timeDifference = currentDate - publishedDate;
-
-  // Convert the time difference to seconds
   const seconds = Math.floor(timeDifference / 1000);
-
   if (seconds < 60) {
     return `${seconds} seconds ago`;
   } else if (seconds < 3600) {
